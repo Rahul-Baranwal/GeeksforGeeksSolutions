@@ -1,0 +1,8 @@
+// Finding the largest can be so easy using the packages just you have sort the aray and print the last element else you can use binary search .
+
+class Solution {
+    public static int largest(int n, int[] arr) {
+        Arrays.sort(arr);
+        return arr[n-1];
+    }
+}
