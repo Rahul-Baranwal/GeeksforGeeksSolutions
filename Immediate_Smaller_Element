@@ -1,0 +1,17 @@
+//it gives the output as when the next element is smaller then it changes the value of the before element and when the next element is greater then it prints the -1 value and going towrads the lst element it always give the value -1 as there are no element next to the last
+
+
+class Solution {
+    void immediateSmaller(int arr[], int n) {
+        // code here
+        for(int i = 0; i < arr.length-1; i++){
+            if(arr[i] > arr[i+1]){
+                arr[i] = arr[i+1];
+            }
+            else{
+                arr[i] = -1;
+            }
+        }
+            arr[n-1] = -1;
+    }
+}
