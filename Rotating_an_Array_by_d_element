@@ -1,0 +1,19 @@
+//Here we are rotating the array by the d element as given the array and rotate them and it can rotate left as well as right just do some changes and it will be done.
+
+
+class Solution {
+    void leftRotate(int arr[], int d) {
+        // code here
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = d; i < arr.length ; i++){
+            list.add(arr[i]);
+        }
+        for(int i = 0; i < d; i++){
+            list.add(arr[i]);
+        }
+        for(int i = 0; i < list.size(); i++){
+            arr[i] = list.get(i);
+        }
+      
+    }
+}
