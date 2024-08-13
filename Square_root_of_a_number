@@ -1,0 +1,12 @@
+//finding the square root of the number by the packages while you can also find the dquare root using the binary method for the optimal solution
+
+
+class Solution {
+    long floorSqrt(long n) {
+        // Your code here
+        long value = (long)Math.floor(Math.sqrt(n));
+        return value;
+    }
+}
+
+
