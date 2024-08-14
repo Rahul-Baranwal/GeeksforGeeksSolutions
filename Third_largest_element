@@ -1,0 +1,20 @@
+//Here checking if there is less than 3 element in the array them return -1 else go and find the third largest element in the array .
+
+
+class Solution {
+    int thirdLargest(int arr[]) {
+        // Your code here
+       if(arr.length < 2){
+           return -1;
+       }
+       Arrays.sort(arr);
+       int value =0;
+       for(int i = arr.length-1; i > 0; i--){
+           if(arr[i] > 0){
+               value = arr[i-2];
+               break;
+           }
+       }
+       return value;
+    }
+}
