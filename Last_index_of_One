@@ -1,0 +1,15 @@
+// finding the "Given a string s consisting of only '0's and '1's,  find the last index of the '1' present." returning the last index of the "1" digit 
+
+class Solution {
+    public int lastIndex(String s) {
+        int index = 0;
+        for(int i = s.length()-1; i >= 0; i--){
+        char c = s.charAt(i);
+            if(c == '1'){
+                return i;
+            }
+        }
+        return -1;    
+        
+    }
+}
