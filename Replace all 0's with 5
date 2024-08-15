@@ -1,0 +1,52 @@
+//Here we have gone through two approach in first method is while reversing the number when we get the 0 digit there only we convert the it into 5 after that we again go for the reversing for the number and find the result.
+
+
+
+
+class Solution {
+    int convertfive(int num) {
+        // Your code here
+        if(num == 0){
+            return 5;
+        }
+                                                      /* Approach method 1 */
+    //     int rev = 0;
+    //     int digit =0;
+    //     while(num > 0){
+    //     digit = num % 10;
+    //     if(digit == 0){
+    //         digit = 5;
+    //     }
+    //     rev = rev * 10 + digit;
+    //     num = num / 10;
+    //     }
+    //  int no = 0;
+    //  while(rev != 0){
+    //      digit = rev % 10;
+    //      no = no * 10 + digit;
+    //      rev = rev / 10;
+    //  }
+    //  return no;
+
+                                                                         /* Apprach Method 2  */
+    int ans = 0;
+    while(num > 0){
+        int rev = num % 10;
+        if(rev == 0){
+            ans = ans * 10 + 5;
+        }
+        else{
+            ans = ans * 10 + rev;
+        }
+        num = num / 10;
+    }
+    int value =0;
+    while (ans > 0){
+        int rev_ans = ans % 10;
+        value = value * 10 + rev_ans;
+        ans = ans / 10;
+    }
+    
+    return value;
+     }
+}
