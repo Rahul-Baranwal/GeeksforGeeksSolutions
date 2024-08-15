@@ -1,0 +1,29 @@
+class Solution {
+    int getOddOccurrence(int[] arr, int n) {
+        // code here
+       
+       //lets gor for the two approach 
+       //firstly we will go for the bitwise operator 
+       
+       
+    //   int ans =0;
+    //   for(int i = 0; i < n; i++){
+    //       ans = ans ^ arr[i];
+    //   }
+    //   return ans;
+       
+       
+       //secondly count the number of the times the digit has came and check for the its comng numbe rof time or not
+        int a[]  = new int[100000];
+        for(int i = 0;  i < n; i++){
+            a[arr[i]]++;   // count the number of times the value has been came as a[2] = 2 a[1] = 2 and a[3] = 3
+            
+        }
+        for(int i = 0 ; i < 100000; i++){
+            if(a[i] % 2 != 0){
+                return i;
+            }
+        }
+       return -1;
+    }
+}
