@@ -1,0 +1,23 @@
+class Solution {
+    static int countSquares(int N) {
+        // code here
+        
+                                    //First Method 
+
+        // int count = (int) Math.sqrt(N-1);
+        // return count;
+                                    //Second Method
+
+        int count = 0;
+        for(int i =1 ;i < N; i++){
+            if(i * i < N){
+                count++;
+            }
+            else{
+                break;
+            }
+            
+        }
+        return count;
+}
+}
