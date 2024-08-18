@@ -1,0 +1,28 @@
+class Solution {
+    long sumOfSeries(long n) {
+        // code here
+        
+        
+            //   first method 
+            
+            
+            
+        // long value = 0;
+        // for(int i = 0; i <= n; i++){
+        //     value = value + (long)Math.pow(i,3);
+        // }
+        // return value;
+        
+        
+                // Second method 
+                
+                
+        // using the maths formula 
+        
+        long ans = (n * (n + 1)) / 2;
+        long value = ans * ans;
+        return value;
+        
+        
+    }
+}
