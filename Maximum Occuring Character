@@ -1,0 +1,22 @@
+
+
+class Solution
+{
+    //Function to find the maximum occurring character in a string.
+    public static char getMaxOccuringChar(String line)
+    {
+       int[] charCount = new int[26];
+        for (int i = 0; i < line.length(); i++) {
+            charCount[line.charAt(i) - 97]++;
+        }
+        int max = 0;
+        char maxCharacter = ' ';
+        for (int i = 0; i < 26; i++) {
+            if (charCount[i] > max) {
+                max = charCount[i];
+                maxCharacter = (char) (i + 97);
+            } 
+        }
+        return maxCharacter;
+    }
+}
