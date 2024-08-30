@@ -1,0 +1,12 @@
+class Solution {
+    // Function to find the maximum element from array arr1 and
+    // the minimum element from array arr2 and return their product.
+    public long findMultiplication(int[] arr1, int[] arr2) {
+        // code here
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        int last = arr1.length-1;
+        int value = arr1[last] * arr2[0];
+        return value;
+    }
+}
