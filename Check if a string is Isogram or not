@@ -1,0 +1,17 @@
+class Solution
+{
+    //Function to check if a string is Isogram or not.
+    static boolean isIsogram(String data){
+        //Your code here
+        HashSet<Character> set = new HashSet<Character>();
+        for(char c : data.toCharArray()){
+            set.add(c);
+        }
+        if(set.size() == data.length()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
