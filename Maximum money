@@ -1,0 +1,18 @@
+
+class Solution {
+    static int maximizeMoney(int N , int K) {
+        // code here
+    int result = 0;
+   if(N%2==0){
+       for(int i = 2; i <= N; i+=2){
+           result = result + K;
+       }
+   }
+   if(N%2!=0){
+       for(int i = 1; i <= N; i+=2){
+           result = result + K;
+       }
+   }
+   return result;
+    }
+};
