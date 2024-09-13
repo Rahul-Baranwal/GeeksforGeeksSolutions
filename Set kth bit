@@ -1,0 +1,9 @@
+//here use the concept of the bit manipulation and the bitwise or operator 
+
+class Solution{
+    static int setKthBit(int N,int K){
+        // code here
+        int result = N | (1 << K);
+        return result;
+    }
+}
